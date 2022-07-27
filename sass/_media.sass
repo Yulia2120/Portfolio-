@@ -1,0 +1,74 @@
+@media (max-width: 1200px)
+    header
+        padding: 18px 4%
+        transition: .2s
+    .sticky
+        padding: 10px 4%
+        transition: .2s
+    section
+        padding: 80px 4%
+        transition: .2s
+        $big-font: 4.8rem
+        $hr-font: 3.8rem
+        $p-font: 1rem
+
+@media (max-width: 991px)
+    header
+        #menu_icon
+            display: initial
+        .navbar
+            position: absolute
+            top: -700px
+            left: 0
+            right: 0
+            flex-direction: column
+            background: $bg-color
+            text-align: left
+            transition: all .30s
+            a
+                display: block
+                padding: 1.1rem
+                margin: 1.3rem
+                border-left: 2px solid $text-color
+            a:hover
+                background: $main-color
+            a::after
+                display: none
+        .active
+            top: 100%
+    .about
+        grid-template-columns: 1fr
+        &_img
+            text-align: center
+            margin-bottom: 30px
+            img
+                max-width: 100%
+                width: 700px
+                height: auto
+    .contact
+        grid-template-columns: 1fr
+        &_img
+            text-align: center
+            margin-bottom: 25px
+        &_form
+            order: 2
+    .portfolio
+        .box
+            img
+                max-width: 100%
+                width: 760px
+                height: auto
+
+            
+
+
+
+
+
+
+    section
+        .home
+            height: 85vh
+   
+            
+
